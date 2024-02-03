@@ -1,4 +1,4 @@
-# PROG8051_ASSIGNMENT_1
+Here is my video link : https://youtu.be/4NSuAXABL4w
 This project is about console application in which user needs to input their choice about pet and pet name.After that user needs to choose action which he want to do with pet like feed the pet,play with pet or give rest to the pet.From that action the pet's happyness level,Hunger level and Health level are effected. 
 Application starts with asking user about their choice of pet from three types like Cat,Dog or rabbit.
 After choosing pet,user needs to put pet name.
