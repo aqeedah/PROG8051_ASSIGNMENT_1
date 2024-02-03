@@ -35,7 +35,7 @@ namespace VirtualPetApp
             Console.WriteLine("\n");
             Console.WriteLine("What would you like to keep as your pet Name?");
             string Name = Console.ReadLine();
-            Console.WriteLine("Welcome, "+ Name + "\nLet's do some Action "+ Name);
+            Console.WriteLine("Welcome, "+ Name + "\nLet's do some Action "+ Name + " !!!");
             Console.WriteLine("\n");
             int exit = 0;
             int Happyness = 3;
@@ -43,7 +43,7 @@ namespace VirtualPetApp
             int Health = 3;
 
             //Asking user for doing action 
-            while(exit !=5)
+            while(exit != 5)
             {
                 Console.WriteLine("\n");
                 Console.WriteLine("Please select Action you want to do with " + Name);
@@ -51,7 +51,7 @@ namespace VirtualPetApp
                 Console.WriteLine("\n");
                 int Action = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("your choosen Action is: "+Action);
-                
+                  
                 if (Action == 1)
                 {
                     if (Hunger >= 3 && Hunger <= 10)
@@ -60,18 +60,18 @@ namespace VirtualPetApp
                         Hunger--;
                         Health++;
                     }
-                    else
+                    else if(Health >= 10)
                     {
                         Console.WriteLine(Name + "  is not want to eat,you are overfidding him.");
                     }
                 }
                 else if (Action == 2)
                 {   
-                    if (Hunger > 10 || Health <= 1)
+                    if (Hunger >= 9 || Health <= 1)
                     {
-                        Console.WriteLine(Name + " is too hungary you need to feed him first then plar with him.");
-                        Happyness++;
-                        Hunger++;
+                        Console.WriteLine(Name + " is too hungary you need to feed him first then play with him.");
+                       // Happyness++;
+                       // Hunger++;
                     }
                     else if (Happyness >= 3 && Happyness <= 10)
                     {
@@ -94,7 +94,7 @@ namespace VirtualPetApp
                 else if (Action == 4)
                 {
                     Console.WriteLine("\n");
-                    Console.WriteLine("The status of " + Name + " is:\n" + "Happyness level is: " + Happyness + "\nHunger level is: " + Hunger + "\nHelth level is: " + Health); 
+                    Console.WriteLine("The status of " + Name + " is:\n" + "Happyness level is: " + Happyness + "\nHunger level is: " + Hunger + "\nHealth level is: " + Health); 
                 }
                 else
                 {
